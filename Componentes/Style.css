@@ -1,0 +1,360 @@
+
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.header{
+  position: sticky;
+  top:0;
+}
+
+/* sections label a */
+.section{
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  text-align: center;
+} 
+
+
+
+
+
+.logo{
+  border-radius: 50px;
+  -webkit-box-shadow:0px 0px 0px 0px #000000; 
+  box-shadow: 1px 1px 1px 1px #000000;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+} 
+
+.logo:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+
+/* panel desplegable */
+ .panel{
+  text-align: center;
+  position: fixed;
+  z-index: 998;
+  background-color:#F2E5E5;
+  width: 30% ;
+  top: 0;
+  bottom: 0.5;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  /* DeArriba */
+  transform: translate(0,-100%); 
+  /* DeAbajo */
+   /* transform: translate(0,100%);  */
+  /* Derecha */
+  /* transform: translate(100%,0%);   */
+  /* Izquierda */
+   /* transform: translate(100%,0);    */
+
+}  
+
+
+/*  activity panel, move */
+.panel.is-active{
+  transform: translate(0%,0%);
+  opacity: 1;
+  
+} 
+
+
+
+/* Boton hamburger */
+/* .panel-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+} */
+
+/* menu nav */
+.menu{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* Menu Label a */
+.menu a { 
+  padding: 1rem;
+  width: 1rem;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2B3A55;
+  transition: all 0.5s ease;
+  font-family: 'Mr Dafoe', cursive;
+} 
+
+/* hover about label a */
+.menu a:hover{
+  /* font-weight: bold; */
+  color: #5d6a86;
+  
+ 
+} 
+
+.conoflecha{
+  height: 40px;
+  width: 40px;
+}
+
+.conoflecha:hover{
+  cursor: pointer;
+
+}
+
+
+.navBar{
+  width: 100%;
+  background-color: #2B3A55;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+ 
+}
+
+.titulonav{
+ 
+  margin-top: -10px;
+  height: 6vh;
+  font-family: 'Mr Dafoe', cursive;
+  color: #CE7777;
+  word-spacing: 2px; 
+  font-size: 45px;
+  text-shadow: 1px 2px 2px #000000;
+}
+
+
+  
+/* main */
+
+ main{
+  background-color: #CE7777;
+ }
+
+.banner{
+  height: 70%;
+  width: 90%;
+  padding: 5%;
+} 
+
+/* HELADOS */
+
+.containerp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/Componentes/img/paletafondo.png');
+  background-size: 40px;
+  height: 60%;
+}
+
+.logo2{
+  height: 50px;
+}
+
+.products{
+  
+  color: #CE7777;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+
+
+.helados-container{
+  display: grid;
+  grid-template-columns:repeat(4,1fr ) ; 
+  background-color: #2B3A55;
+}
+
+
+.img-h{
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  
+}
+
+.img-h:hover{
+ 
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+
+.precio{
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: 'Mr Dafoe', cursive;
+  color: #F2E5E5;
+}
+
+/* slider */
+
+.pay{
+  color: #181818;
+  font-family: 'Mr Dafoe', cursive;
+  text-decoration: underline;
+}
+
+
+.color{
+  background-color: #CE7777;
+}
+
+.slider{
+  position: relative;
+  width: 80%;
+  margin: 1rem auto ;
+  text-align: center;
+  
+}
+
+.slider-slides{
+  position: relative;
+  height: 150px
+}
+
+.slider-slide{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+
+.slider-slide>img{
+  height: inherit;
+  width: inherit;
+  object-fit: contain;
+  object-position: 50% 0%;
+}
+
+.slider-slide.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-btns{
+  position: absolute;
+  width: 100%;
+  top:45%;
+  display:flex;
+  justify-content: space-between;
+
+
+}
+
+.slider a{
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.section-about-us{
+
+  height: 20%;
+  background-color: #2B3A55;
+  color: #F2E5E5;
+  text-shadow: 2px 2px 2px #000000;
+ 
+}
+
+.about-us{
+  font-family: 'Mr Dafoe', cursive;
+  text-decoration: underline;
+  margin-bottom: 0;
+  background-color: #CE7777;
+  padding: 1%;
+  
+}
+
+.lorem{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin: 2.5%;
+text-align: center;
+margin-top: -2px;
+padding: 3%;
+
+}
+
+
+.contenedor-redes{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  top: 0px;
+}
+
+.redes{
+  
+  display: flex;
+  flex-direction: row;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  
+}
+
+.colorfooter{
+  font-size: 10px;
+  background-color: #CE7777;
+  margin-top: 20px;
+  margin-bottom: 0;
+}

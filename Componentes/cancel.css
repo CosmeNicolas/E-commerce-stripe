@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  font-display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: url('/Helados/drop-down.png');
+}
+
+
+
+.contenedor{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contenedor2{
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15%;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  background-color: rgba(241, 12, 12, 0.033);
+  border-radius: 5px;
+  
+  
+}
+
+.xx{
+  margin-top: 20px;
+  position: relative;
+  align-content: flex-end;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.nopago{
+  font-family: monospace;
+  font-size:50px ;
+  border-color: black;
+  color: white;
+  font-display: flex;
+  justify-content: center;
+  align-content: center; 
+  
+}
+
+.a{
+  font-family: monospace;
+  font-size:30px ;
+  border-color: black;
+  color: white;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 35px;
+}
+
+

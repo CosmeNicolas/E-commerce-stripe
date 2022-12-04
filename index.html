@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Componentes/assets/menu_helado.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/Componentes/Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+  <title>The Cream-Commerce🍦</title>
+</head>
+<body>
+    <header class="header">
+      <nav class="navBar" id="home">
+        <h1 class="titulonav">The Cream Commerce🍦</h1>
+        <span class="panelBtn">
+            <img  class="logo " src="/Componentes/img/chocolate (3).png" alt="logo" role="button">
+        </span>
+      </nav>
+       </header>
+          
+       <aside class="panel">
+          <nav class="menu">
+            <a href="#home" >Home</a>
+            
+            <a href="#Products">Product</a>
+             
+            <a href="#Pays">Pays</a>
+             
+            <a href="#about-us">About Us</a>
+             
+          </nav>
+       </aside>
+      
+     
+
+    <main>
+       <img class="banner" src="/Componentes/img/creamcommerce.png" alt="imagen"> 
+    </main>
+
+
+<section></section>
+
+    <div class="containerp">
+      <h1 id="Products" class="products">Products</h1>
+      <img class="logo2" src="/Componentes/img/helado (2).png" alt="logoh">
+    </div>
+
+
+
+
+<!-- Stripe template -->
+
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1MAZXSFw5Qn75nIpTlUSyoHi"
+publishable-key="pk_test_51M7hmSFw5Qn75nIpfsb8uIRNs6e0QdSQd6rVfE57XEamYQLbzaXtpiGjcHEZ8KyXIPaDFZbtJDzjAC0yzAkqyjJ300rElHfYeE">
+</stripe-pricing-table>
+      <!-- <section class="helados-container" id="helados"></section>
+
+        <template id="helado-template">
+          <figure  class="helado">
+              <img  class="img-h">
+            </figure>
+              <figcaption class="precio"></figcaption>
+         </template>
+       -->
+
+
+
+
+   <!-- Slider -->
+<section></section>
+
+         <h1 id="Pays" class="pay">PAYS</h1>
+         
+
+
+<div class="slider">
+  <div class="slider-slides">
+    <div class="slider-slide active">
+        <img src="./Tarjetas/stripe.png" alt="card">
+    </div>
+    <div class="slider-slide">
+         <img src="./Tarjetas/american-express-2-logo-png-transparent-removebg-preview.png" alt="card">
+    </div>
+    <div class="slider-slide">
+         <img src="./Tarjetas/mastercard-removebg-preview.png" alt="card">
+    </div>
+    <div class="slider-slide">
+         <img src="./Tarjetas/Visa_Inc.-Logo.wine.jpg" alt="">
+    </div>
+  </div>
+
+    <div class="slider-btns">
+      <img id="btnprev" class="conoflecha" src="/Componentes/img/cucuruchoFlechaIz.png" alt="conoflecha" type="button">
+      <img id="btnnext" class="conoflecha" src="/Componentes/img/cucuruchoFlechaDer.png" alt="flcecha" type="button">
+    </div>
+</div>
+       <!--end slider  -->
+
+
+       <section id="about-us" class="section-about-us">
+        <h1 class="about-us">About Us</h1>
+
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iste harum
+          nihil repellendus suscipit fuga veniam voluptate vitae libero ullam
+          dolore sapiente sequi quod nulla dolorem. Doloribus accusantium dolorum velit.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio animi itaque in repellat aperiam iste iusto vero molestias
+          eveniet magnam facilis odio repellendus minima modi facere quae dolorum consequatur doloribus!</p>
+
+
+
+
+       </section>
+
+   <footer>
+     <div class="contenedor-redes">
+       <div>
+         <img class="redes" src="./Tarjetas/facebook.png" alt="facebook">
+        </div>
+        <div>
+          <img class="redes" src="./Tarjetas/gorjeo.png" alt="twitter">
+        </div>
+        <div>
+          <img class="redes" src="./Tarjetas/instagram.png" alt="instagram">
+        </div>
+      </div>
+      <h3 class="colorfooter">copyright</h3>
+   </footer>
+
+  <script src="./assets/Menu_Helado.js" type="module"></script>
+  <script src="/Componentes/index.js" type="module"></script>
+  <script src="https://js.stripe.com/v3/"></script>  
+</body>
+
+</html>
